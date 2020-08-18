@@ -1,6 +1,7 @@
 package com.e.android_movie.data.api
 
 import com.e.android_movie.data.vo.MovieDetails
+import com.oxcoding.moviemvvm.data.vo.MovieResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -14,4 +15,8 @@ interface TheMovieDBinterface {
 
     @GET("movie/{movie_id}")
     fun getMovieDetails(@Path("movie_id") id: Int): Single<MovieDetails>
+
+    @GET("movie/popular")
+    fun getPopularMovie(@Query("page") page: Int): Single<MovieResponse>
+
 }
