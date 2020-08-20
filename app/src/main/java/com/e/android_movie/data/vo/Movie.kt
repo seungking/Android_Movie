@@ -1,4 +1,4 @@
-package com.oxcoding.moviemvvm.data.vo
+package com.e.android_movie.data.vo
 
 
 import com.google.gson.annotations.SerializedName

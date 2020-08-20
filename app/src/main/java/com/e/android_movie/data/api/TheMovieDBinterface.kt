@@ -1,7 +1,7 @@
 package com.e.android_movie.data.api
 
 import com.e.android_movie.data.vo.MovieDetails
-import com.oxcoding.moviemvvm.data.vo.MovieResponse
+import com.e.android_movie.data.vo.MovieResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path
